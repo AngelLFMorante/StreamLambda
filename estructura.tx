@@ -1,0 +1,6 @@
+java-lambda-streams/
+│── src/main/java/com/example/lambda/
+│   ├── LambdaExamples.java  (Ejemplos de funciones lambda)
+│── src/main/java/com/example/streams/
+│   ├── StreamExamples.java  (Ejemplos de Streams API)
+│── src/main/java/com/example/MainApplication.java  (Clase principal)
