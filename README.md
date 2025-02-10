@@ -71,10 +71,25 @@ Consumer<String> imprimirMensaje = mensaje -> System.out.println("Mensaje: " + m
 
 ## Posibles Preguntas en Entrevistas Técnicas
 1. **¿Qué es una expresión lambda en Java?**
+
+    Una expresión lambda en Java es una forma de representar una función o un bloque de código que puede ser pasado como argumento a un método. Permite escribir implementaciones de interfaces funcionales de manera más concisa y legible.
+
 2. **¿Cuál es la diferencia entre `map()` y `filter()` en Streams?**
+   - **`map()`**: Se utiliza para transformar los elementos de un stream aplicando una función a cada uno de ellos y devolviendo un nuevo stream con los resultados transformados.
+   - **`filter()`**: Se utiliza para filtrar los elementos de un stream, devolviendo un nuevo stream que solo contiene los elementos que cumplen con una condición específica.
 3. **¿Cómo funciona `Collectors.toList()`?**
+
+   Es un collector que se utiliza en una operación de terminal de un stream para acumular los elementos del stream en una lista. Devuelve un `List<T>` que contiene todos los elementos procesados por el stream.
+
 4. **¿Cuál es la diferencia entre `Predicate`, `Function` y `Consumer`?**
+
+   - **`Predicate<T>`**: Representa una función que toma un argumento de tipo `T` y devuelve un valor booleano. Se usa generalmente para filtrado.
+   - **`Function<T, R>`**: Representa una función que toma un argumento de tipo `T` y devuelve un resultado de tipo `R`. Se usa para transformar datos.
+   - **`Consumer<T>`**: Representa una operación que toma un argumento de tipo `T` y no devuelve ningún resultado. Se usa para realizar acciones como imprimir o modificar objetos.
+   
 5. **¿Cuándo usar `parallelStream()` en lugar de `stream()`?**
+    Se usa cuando se desea procesar los elementos de un stream en paralelo para aprovechar varios núcleos del procesador. Es útil para operaciones costosas computacionalmente en conjuntos de datos grandes. Se debe evitar cuando el costo de gestionar los hilos en paralelo es mayor que los beneficios.
+
 
 ## Contribución
 Si encuentras mejoras o quieres aportar, envía un **Pull Request** o abre un **Issue** en el repositorio.
